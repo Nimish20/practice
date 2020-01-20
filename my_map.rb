@@ -11,10 +11,10 @@ class Array
 
   def my_map2
     output = []
-    self.each { |i| output << (yield i) }
+    each { |i| output << (yield i) }
     output
   end
 end
 
-p [10, 20, 30].my_map2 { |i| i * 2 }
-p [1, 5, 6, 9].my_map { |i| i * i }
+p([10, 20, 30].my_map2 { |i| i * 2 })
+p([1, 5, 6, 9].my_map { |i| i * i })
