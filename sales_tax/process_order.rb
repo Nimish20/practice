@@ -12,7 +12,6 @@ class OrderProcessor
     @order_list.each do |item_detail|
       products << Product.new(item_detail)
     end
-
     products
   end
 end
